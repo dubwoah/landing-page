@@ -56,21 +56,34 @@ main {
 /* ... your existing CSS ... */
 
 /* Responsive Design */
+/* ... your existing CSS ... */
+
+/* Responsive Design */
 @media (max-width: 600px) {
     header {
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center; /* Keep this */
+        align-items: center;
     }
 
     .logo {
-        width: auto; /* Change from 100% to auto */
-        margin-bottom: 0; /* Remove margin-bottom */
+        width: auto;
+        margin-bottom: 0;
+        display: flex; /* Add flex to logo */
+        align-items: center; /* Align logo items */
     }
 
     nav {
         width: 100%;
         text-align: right;
+        display: flex; /* Add flex to nav */
+        justify-content: flex-end; /* Align to the right */
+        align-items: center; /* Align nav items */
+    }
+
+    nav a {
+        display: inline-flex; /* Ensure vertical alignment */
+        align-items: center; /* Ensure vertical alignment */
     }
 
     main {
