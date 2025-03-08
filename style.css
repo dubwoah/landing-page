@@ -58,19 +58,19 @@ main {
 /* Responsive Design */
 @media (max-width: 600px) {
     header {
-        flex-direction: row; /* Change to row to keep items in a line */
-        flex-wrap: wrap; /* Allow items to wrap if needed */
-        align-items: center; /* Align items vertically in the center */
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center; /* Keep this */
     }
 
     .logo {
-        width: 100%; /* Make the logo take full width */
-        margin-bottom: 10px; /* Add some space below the logo */
+        width: auto; /* Change from 100% to auto */
+        margin-bottom: 0; /* Remove margin-bottom */
     }
 
     nav {
-        width: 100%; /* Make the nav take full width */
-        text-align: right; /* Align the contact link to the right */
+        width: 100%;
+        text-align: right;
     }
 
     main {
