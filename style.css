@@ -53,18 +53,29 @@ main {
 }
 
 /* Responsive Design */
+/* ... your existing CSS ... */
+
+/* Responsive Design */
 @media (max-width: 600px) {
     header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row; /* Change to row to keep items in a line */
+        flex-wrap: wrap; /* Allow items to wrap if needed */
+        align-items: center; /* Align items vertically in the center */
+    }
+
+    .logo {
+        width: 100%; /* Make the logo take full width */
+        margin-bottom: 10px; /* Add some space below the logo */
     }
 
     nav {
-        margin-top: 10px;
+        width: 100%; /* Make the nav take full width */
+        text-align: right; /* Align the contact link to the right */
     }
+
     main {
         font-size: 2em;
-        padding : 20px;
+        padding: 20px;
         text-align: center;
     }
 }
