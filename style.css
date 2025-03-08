@@ -57,14 +57,14 @@ main {
     header {
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start; /* Change to flex-start */
     }
 
     .logo {
         width: auto;
         margin-bottom: 0;
         display: flex;
-        align-items: center;
+        align-items: flex-start; /* Change to flex-start */
     }
 
     nav {
@@ -72,12 +72,13 @@ main {
         text-align: right;
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-start; /* Change to flex-start */
     }
 
     nav a {
         display: inline-flex;
-        align-items: center;
+        align-items: flex-start; /* Change to flex-start */
+        padding-top: 2px; /* Add slight top padding */
     }
 
     main {
