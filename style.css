@@ -57,14 +57,14 @@ main {
     header {
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: flex-start; /* Change to flex-start */
+        align-items: center; /* Change back to center */
     }
 
     .logo {
         width: auto;
         margin-bottom: 0;
         display: flex;
-        align-items: flex-start; /* Change to flex-start */
+        align-items: center; /* Change back to center */
     }
 
     nav {
@@ -72,13 +72,13 @@ main {
         text-align: right;
         display: flex;
         justify-content: flex-end;
-        align-items: flex-start; /* Change to flex-start */
+        align-items: center; /* Change back to center */
     }
 
     nav a {
         display: inline-flex;
-        align-items: flex-start; /* Change to flex-start */
-        padding-top: 2px; /* Add slight top padding */
+        align-items: center; /* Change back to center */
+        margin-top: -2px; /* Add negative margin-top */
     }
 
     main {
