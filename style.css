@@ -53,18 +53,17 @@ main {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 700px) { 
     header {
         flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center; /* Change back to center */
+        align-items: center; 
     }
 
     .logo {
         width: auto;
         margin-bottom: 0;
         display: flex;
-        align-items: center; /* Change back to center */
+        align-items: center; 
     }
 
     nav {
@@ -72,18 +71,23 @@ main {
         text-align: right;
         display: flex;
         justify-content: flex-end;
-        align-items: center; /* Change back to center */
+        align-items: center; 
     }
 
     nav a {
         display: inline-flex;
-        align-items: center; /* Change back to center */
-        margin-top: -2px; /* Add negative margin-top */
+        align-items: center;
+        margin-top: -2px;
+    }
+}
+
+/* Responsive Design - For smaller screens with wrapping */
+@media (max-width: 600px) {
+    header {
+        flex-direction: row;
+        /* Remove flex-wrap: wrap; */ 
+        align-items: center;
     }
 
-    main {
-        font-size: 2em;
-        padding: 20px;
-        text-align: center;
-    }
+    /* ... rest of your existing media query ... */ 
 }
